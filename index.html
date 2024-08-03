@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.x/dist/tailwind.min.css" rel="stylesheet">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-800">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between">
-                <div class="flex space-x-7">
-                    <a href="#" class="flex items-center py-4 px-2">
-                        <span class="font-semibold text-gray-500 text-lg">Your Name</span>
-                    </a>
-                    <div class="hidden md:flex items-center space-x-1">
-                        <a href="#" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About Me</a>
-                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Projects</a>
-                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Certificates</a>
+<body class="bg-gray-900 text-white">
+
+    <!-- Menu Bar -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <a href="#" class="text-xl font-bold text-white">My Website</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">HOME</a>
+                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About Me</a>
+                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Projects</a>
+                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Certificates</a>
                     </div>
                 </div>
             </div>
@@ -27,49 +28,37 @@
     </nav>
 
     <!-- Profile Section -->
-    <section class="flex items-center justify-center py-10 bg-white">
-        <div class="flex flex-col md:flex-row items-center">
-            <img src="placeholder.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto md:mx-0 md:mr-6">
-            <div class="text-center md:text-left mt-4 md:mt-0">
-                <h1 class="text-xl font-bold">Your Name</h1>
-                <p class="text-sm text-gray-600 mt-2">A brief introduction about yourself, your interests, skills, and professional background.</p>
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <div class="flex items-center">
+            <div class="w-40 h-40 rounded-full overflow-hidden flex-shrink-0">
+                <img src="images/profile_pic.jpeg" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <div class="ml-6">
+                <h2 class="text-2xl font-bold">About Me</h2>
+                <p class="mt-2 text-gray-400">I am a Biomedical Engineer who is specialized in the field of Generative AI and Large Language Models (LLM). My work involves integrating advanced AI technologies into biomedical applications to drive innovation and improve healthcare outcomes.</p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="bg-gray-100 py-10">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <!-- Project Item -->
-                <div class="bg-white shadow-lg rounded-lg p-4">
-                    <h3 class="font-bold text-lg">Project Title</h3>
-                    <p class="text-sm text-gray-600 mt-2">A brief description of the project, technologies used, and any relevant achievements or challenges overcome.</p>
-                </div>
-                <!-- Repeat for other projects -->
-            </div>
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-4 bg-gray-700 rounded-md">Project 1</div>
+            <div class="p-4 bg-gray-700 rounded-md">Project 2</div>
+            <div class="p-4 bg-gray-700 rounded-md">Project 3</div>
         </div>
     </section>
 
     <!-- Certificates Section -->
-    <section class="py-10 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-center">Certificates</h2>
-            <div class="flex flex-wrap justify-center gap-4 mt-4">
-                <!-- Certificate Item -->
-                <div class="bg-gray-100 shadow-lg rounded-lg p-4">
-                    <h3 class="font-bold text-lg">Certificate Title</h3>
-                    <p class="text-sm text-gray-600 mt-2">Details about the certificate, issuer, and date of achievement.</p>
-                </div>
-                <!-- Repeat for other certificates -->
-            </div>
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <h2 class="text-2xl font-bold mb-4">Certificates</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-4 bg-gray-700 rounded-md">Certificate 1</div>
+            <div class="p-4 bg-gray-700 rounded-md">Certificate 2</div>
+            <div class="p-4 bg-gray-700 rounded-md">Certificate 3</div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white shadow-lg text-center p-4">
-        <p class="text-sm text-gray-500">© 2024 Your Name. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
