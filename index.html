@@ -1,1 +1,75 @@
-<h2>HTNLK</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.x/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <a href="#" class="flex items-center py-4 px-2">
+                        <span class="font-semibold text-gray-500 text-lg">Your Name</span>
+                    </a>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a href="#" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About Me</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Projects</a>
+                        <a href="#" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Certificates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="flex items-center justify-center py-10 bg-white">
+        <div class="flex flex-col md:flex-row items-center">
+            <img src="placeholder.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto md:mx-0 md:mr-6">
+            <div class="text-center md:text-left mt-4 md:mt-0">
+                <h1 class="text-xl font-bold">Your Name</h1>
+                <p class="text-sm text-gray-600 mt-2">A brief introduction about yourself, your interests, skills, and professional background.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-gray-100 py-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <!-- Project Item -->
+                <div class="bg-white shadow-lg rounded-lg p-4">
+                    <h3 class="font-bold text-lg">Project Title</h3>
+                    <p class="text-sm text-gray-600 mt-2">A brief description of the project, technologies used, and any relevant achievements or challenges overcome.</p>
+                </div>
+                <!-- Repeat for other projects -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="py-10 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center">Certificates</h2>
+            <div class="flex flex-wrap justify-center gap-4 mt-4">
+                <!-- Certificate Item -->
+                <div class="bg-gray-100 shadow-lg rounded-lg p-4">
+                    <h3 class="font-bold text-lg">Certificate Title</h3>
+                    <p class="text-sm text-gray-600 mt-2">Details about the certificate, issuer, and date of achievement.</p>
+                </div>
+                <!-- Repeat for other certificates -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg text-center p-4">
+        <p class="text-sm text-gray-500">© 2024 Your Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
