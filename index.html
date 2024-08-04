@@ -10,25 +10,72 @@
             background-color: #4f46e5;
             color: white;
         }
-        .project-card {
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card {
+            background: #2d3748;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #a0aec0;
+        }
+        .card img {
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .thumbnail {
             position: relative;
             overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .project-description {
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 1rem;
-            background: rgba(0, 0, 0, 0.75);
+        .thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
         }
-        .project-card:hover .project-description {
-            opacity: 1;
+        .thumbnail:hover img {
+            transform: scale(1.05);
         }
-        .see-more-button {
-            margin-top: 2rem; /* Adjust the spacing as needed */
+        .thumbnail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .icon {
+            font-size: 1.5rem;
+            color: #4f46e5;
+            margin-right: 0.5rem;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .section-title .icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+        .nav-item:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -39,14 +86,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex">
-                    <div class="flex-shrink-0">
-                        <a href="#" class="text-xl font-bold text-white">My Website</a>
-                    </div>
+            
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">HOME</a>
-                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About Me</a>
-                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Projects</a>
-                        <a href="#" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Certificates</a>
+                        <a href="index.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">HOME</a>
+                        <a href="about.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About Me</a>
+                        <a href="projects.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">Projects</a>
+                        <a href="certificates.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Certificates</a>
                     </div>
                 </div>
             </div>
@@ -70,29 +115,29 @@
     <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
         <h2 class="text-2xl font-bold mb-4">Projects</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="project-card p-4 bg-gray-700 rounded-md">
-                <img src="images/project1.png" alt="Number Plate Detection" class="w-full h-40 object-cover rounded-md mb-2">
+            <div class="p-4 bg-gray-700 rounded-md card">
+                <div class="thumbnail">
+                    <img src="images/project1.png" alt="Number Plate Detection">
+                </div>
                 <h3 class="text-xl font-semibold">Number Plate Detection</h3>
-                <div class="project-description text-gray-400">
-                    <p>This project focuses on detecting number plates using state-of-the-art YOLO V8 and extracting characters using Google Tesseract. The system is designed to identify and read number plates accurately from images.</p>
-                </div>
+                <p class="text-gray-400">This project focuses on detecting number plates using state-of-the-art YOLO V8 and extracting characters using Google Tesseract. The system is designed to identify and read number plates accurately from images.</p>
             </div>
-            <div class="project-card p-4 bg-gray-700 rounded-md">
-                <img src="images/project2.png" alt="Movie Recommendation System" class="w-full h-40 object-cover rounded-md mb-2">
+            <div class="p-4 bg-gray-700 rounded-md card">
+                <div class="thumbnail">
+                    <img src="images/project2.png" alt="Movie Recommendation System">
+                </div>
                 <h3 class="text-xl font-semibold">Movie Recommendation System</h3>
-                <div class="project-description text-gray-400">
-                    <p>A movie recommendation system is an advanced algorithm designed to suggest films to users based on their preferences and viewing history. By analyzing user data such as previously watched movies, ratings, and viewing patterns, the system predicts and recommends movies that the user is likely to enjoy. On OTT (Over-The-Top) platforms like Netflix, Amazon Prime, and Disney+, these systems play a crucial role in enhancing user experience by offering personalized content. They use techniques such as collaborative filtering, content-based filtering, and hybrid methods to deliver accurate and tailored movie suggestions, thereby increasing user engagement and satisfaction.</p>
-                </div>
+                <p class="text-gray-400">A movie recommendation system is an advanced algorithm designed to suggest films to users based on their preferences and viewing history. By analyzing user data such as previously watched movies, ratings, and viewing patterns, the system predicts and recommends movies that the user is likely to enjoy. On OTT (Over-The-Top) platforms like Netflix, Amazon Prime, and Disney+, these systems play a crucial role in enhancing user experience by offering personalized content. They use techniques such as collaborative filtering, content-based filtering, and hybrid methods to deliver accurate and tailored movie suggestions, thereby increasing user engagement and satisfaction.</p>
             </div>
-            <div class="project-card p-4 bg-gray-700 rounded-md">
-                <img src="images/project3.png" alt="Digital Humidity Meter Calibrator" class="w-full h-40 object-cover rounded-md mb-2">
-                <h3 class="text-xl font-semibold">Digital Humidity Meter Calibrator</h3>
-                <div class="project-description text-gray-400">
-                    <p>This project involves designing and implementing a digital humidity meter calibrator, which ensures accurate and reliable measurements of humidity levels. The system uses advanced sensors and calibration techniques to maintain precision in various environmental conditions.</p>
+            <div class="p-4 bg-gray-700 rounded-md card">
+                <div class="thumbnail">
+                    <img src="images/project3.png" alt="Digital Humidity Meter Calibrator">
                 </div>
+                <h3 class="text-xl font-semibold">Digital Humidity Meter Calibrator</h3>
+                <p class="text-gray-400">This project involves designing and implementing a digital humidity meter calibrator, which ensures accurate and reliable measurements of humidity levels. The system uses advanced sensors and calibration techniques to maintain precision in various environmental conditions.</p>
             </div>
         </div>
-        <div class="text-center see-more-button">
+        <div class="text-center mt-4">
             <a href="projects.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">See More Projects</a>
         </div>
     </section>
@@ -148,20 +193,26 @@
     <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
         <h2 class="text-2xl font-bold mb-4">Certificates</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="p-4 bg-gray-700 rounded-md">
-                <img src="images/certificates/certificate1.PNG" alt="Generative AI with Large Language Models" class="w-full h-40 object-cover rounded-md mb-2">
-                <p class="text-center">Generative AI with Large Language Models</p>
+            <div class="p-4 bg-gray-700 rounded-md card">
+                <div class="thumbnail">
+                    <img src="images/certificates/certificate1.PNG" alt="Generative AI with Large Language Models">
+                </div>
+                <p class="text-center mt-2">Generative AI with Large Language Models</p>
             </div>
-            <div class="p-4 bg-gray-700 rounded-md">
-                <img src="images/certificates/certificate2.PNG" alt="Machine Learning" class="w-full h-40 object-cover rounded-md mb-2">
-                <p class="text-center">Machine Learning</p>
+            <div class="p-4 bg-gray-700 rounded-md card">
+                <div class="thumbnail">
+                    <img src="images/certificates/certificate2.PNG" alt="Machine Learning">
+                </div>
+                <p class="text-center mt-2">Machine Learning</p>
             </div>
-            <div class="p-4 bg-gray-700 rounded-md">
-                <img src="images/certificates/certificate3.PNG" alt="Advanced Learning Algorithms" class="w-full h-40 object-cover rounded-md mb-2">
-                <p class="text-center">Advanced Learning Algorithms</p>
+            <div class="p-4 bg-gray-700 rounded-md card">
+                <div class="thumbnail">
+                    <img src="images/certificates/certificate3.PNG" alt="Advanced Learning Algorithms">
+                </div>
+                <p class="text-center mt-2">Advanced Learning Algorithms</p>
             </div>
         </div>
-        <div class="text-center see-more-button">
+        <div class="text-center mt-4">
             <a href="certificates.html" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">See More Certificates</a>
         </div>
     </section>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .skill:hover {
+            background-color: #4f46e5;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .timeline {
+            position: relative;
+            padding: 0 2rem;
+            margin-bottom: 2rem;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: #4f46e5;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 1rem 2rem;
+            box-sizing: border-box;
+            margin-bottom: 2rem;
+        }
+        .timeline-item-left {
+            left: 0;
+        }
+        .timeline-item-right {
+            left: 50%;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            left: -8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #4f46e5;
+            border: 2px solid #fff;
+        }
+        .timeline-item-right::before {
+            left: auto;
+            right: -8px;
+        }
+        .timeline-content {
+            background: #2d3748;
+            padding: 1rem;
+            border-radius: 8px;
+            color: #a0aec0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .timeline-date {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .timeline-description {
+            font-size: 0.875rem;
+        }
+        .card {
+            background: #2d3748;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #a0aec0;
+        }
+        .icon {
+            font-size: 1.5rem;
+            color: #4f46e5;
+            margin-right: 0.5rem;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .section-title .icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Menu Bar -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">HOME</a>
+                        <a href="about.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">About Me</a>
+                        <a href="projects.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Projects</a>
+                        <a href="certificates.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Certificates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Me Section -->
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <div class="flex items-center">
+            <div class="w-40 h-40 rounded-full overflow-hidden flex-shrink-0">
+                <img src="images/profile_pic.jpeg" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <div class="ml-6">
+                <h2 class="text-2xl font-bold">About Me</h2>
+                <p class="mt-2 text-gray-400">I am a Biomedical Engineer who is specialized in the field of Generative AI and Large Language Models (LLM). My work involves integrating advanced AI technologies into biomedical applications to drive innovation and improve healthcare outcomes. I have a passion for combining technology and healthcare to create impactful solutions that can improve the quality of life for many.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <h2 class="section-title"><i class="fas fa-history icon"></i>Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-content card">
+                    <div class="timeline-date">June 2012 - July 2016</div>
+                    <div class="timeline-description">Bachelor's in Technology, West Bengal University of Technology, Kolkata, India</div>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-content card">
+                    <div class="timeline-date">July 2016 - December 2020</div>
+                    <div class="timeline-description">Founder, MakewithRex, Kolkata, India</div>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-content card">
+                    <div class="timeline-date">April 2021 - May 2024</div>
+                    <div class="timeline-description">Master's in Science, Friedrich Alexander Universität, Erlangen, Germany</div>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-right">
+                <div class="timeline-content card">
+                    <div class="timeline-date">August 2022 - November 2022</div>
+                    <div class="timeline-description">Working Student, Hardware Development, Interherence, Erlangen, Germany</div>
+                </div>
+            </div>
+            <div class="timeline-item timeline-item-left">
+                <div class="timeline-content card">
+                    <div class="timeline-date">November 2022 - October 2023</div>
+                    <div class="timeline-description">Working Student, Data Analyst, Siemens Healthineers, Erlangen, Germany</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <h2 class="section-title"><i class="fas fa-tools icon"></i>Skills</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <!-- Generative AI Skills -->
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2"><i class="fas fa-robot icon"></i>Generative AI</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Python</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Machine Learning</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Deep Learning</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Natural Language Processing</span>
+                </div>
+            </div>
+            <!-- Web Designing -->
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2"><i class="fas fa-paint-brush icon"></i>Web Designing</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">HTML</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">CSS</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">JavaScript</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Tailwind CSS</span>
+                </div>
+            </div>
+            <!-- Database -->
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2"><i class="fas fa-database icon"></i>Database</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">SQL</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">MongoDB</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">PostgreSQL</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Firebase</span>
+                </div>
+            </div>
+            <!-- Business Skills -->
+            <div class="card">
+                <h3 class="text-xl font-semibold mb-2"><i class="fas fa-briefcase icon"></i>Business Skills</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Project Management</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Data Analysis</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Business Strategy</span>
+                    <span class="skill px-2 py-1 bg-gray-700 rounded-md cursor-pointer">Marketing</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 mt-6">
+        <div class="text-center text-gray-400">
+            🧿 Designed with a pinch of love 🧿
+        </div>
+    </footer>
+
+</body>
+</html>

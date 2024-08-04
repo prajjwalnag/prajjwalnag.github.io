@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card {
+            background: #2d3748;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 1.5rem;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #a0aec0;
+        }
+        .card img {
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .icon {
+            font-size: 1.5rem;
+            color: #4f46e5;
+            margin-right: 0.5rem;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .section-title .icon {
+            font-size: 2rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Menu Bar -->
+    <nav class="bg-gray-800 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="index.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">HOME</a>
+                        <a href="about.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">About Me</a>
+                        <a href="projects.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-indigo-500 text-sm font-medium">Projects</a>
+                        <a href="certificates.html" class="text-gray-300 hover:text-white inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium">Certificates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="max-w-7xl mx-auto p-6 mt-6 bg-gray-800 shadow-md rounded-md">
+        <h2 class="section-title"><i class="fas fa-briefcase icon"></i>All Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="card">
+                <img src="images/project1.png" alt="Number Plate Detection" class="w-full h-auto object-cover">
+                <h3>Number Plate Detection</h3>
+                <p>This project focuses on detecting number plates using state-of-the-art YOLO V8 and extracting characters using Google Tesseract. The system is designed to identify and read number plates accurately from images.</p>
+                <p>Technologies: Python, Flask, AWS</p>
+            </div>
+            <div class="card">
+                <img src="images/project2.png" alt="Movie Recommendation System" class="w-full h-auto object-cover">
+                <h3>Movie Recommendation System</h3>
+                <p>A movie recommendation system using BERT and generative AI for personalized suggestions, achieving 92% accuracy with 2-second response times. Deployed on Flask for efficient user experience.</p>
+                <p>Technologies: Python, PostgreSQL, JSON, BERT</p>
+            </div>
+            <div class="card">
+                <img src="images/project3.png" alt="Digital Humidity Meter Calibrator" class="w-full h-auto object-cover">
+                <h3>Digital Humidity Meter Calibrator</h3>
+                <p>Developed production-ready applications for humidity calibration with 99.8% accuracy of calibration sensor incorporating regressor model. Automated the dialysis calibrator’s process using machine learning, reducing manual intervention by 35%.</p>
+                <p>Technologies: Python, Machine Learning, Regressor Model</p>
+            </div>
+            <div class="card">
+                <img src="images/project4.png" alt="The Phoenix Orb Project" class="w-full h-auto object-cover">
+                <h3>The Phoenix Orb Project</h3>
+                <p>This project aims to create a sustainable and efficient energy solution using advanced AI algorithms to optimize energy consumption and distribution.</p>
+                <p>Technologies: AI, Python, TensorFlow</p>
+            </div>
+            <div class="card">
+                <img src="images/project5.png" alt="Private LLM with RAG and OpenAI" class="w-full h-auto object-cover">
+                <h3>Private LLM with RAG and OpenAI</h3>
+                <p>Developed an AI application using LangChain, OpenAI, and RAG for processing PDFs and enabling natural language queries, achieving 98% accuracy in answering queries.</p>
+                <p>Technologies: Python, OpenAI, Flask</p>
+            </div>
+            <div class="card">
+                <img src="images/project6.png" alt="Generative AI Ad Campaigner Bot" class="w-full h-auto object-cover">
+                <h3>Generative AI Ad Campaigner Bot</h3>
+                <p>Developed an AI-powered bot using OpenAI and Imagine API to create high-ranking SEO content and unique images, significantly enhancing ad campaign performance and search engine visibility.</p>
+                <p>Technologies: Python, OpenAI, Prompt Engineering</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6 mt-6">
+        <div class="text-center text-gray-400">
+            🧿 Designed with a pinch of love 🧿
+        </div>
+    </footer>
+
+</body>
+</html>
